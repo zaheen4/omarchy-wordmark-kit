@@ -1,6 +1,9 @@
-# omarchy-boot-wordmark
+# omarchy-wordmark-kit
 
-Build an Omarchy-style Plymouth boot theme from any word. Renders your word in **Delta Corps Priest 1** — the FIGlet font the Omarchy wordmark itself is drawn in — and rasterizes it to a seamless `logo.png` in your theme's colors. The result plugs into Omarchy's native **Style → Unlock** picker, no system files touched.
+Two small tools that render any word in **Delta Corps Priest 1** — the FIGlet font the Omarchy wordmark itself is drawn in — for Omarchy's branded surfaces:
+
+- `render-wordmark.sh` builds a Plymouth boot theme (`unlock.png` + `preview-unlock.png` + `colors.toml`) that plugs into the native **Style → Unlock** picker, no system files touched.
+- `render-screensaver.sh` renders ASCII art for the Omarchy screensaver / About screen.
 
 ![example](examples/cosmos/preview-unlock.png)
 ![example light](examples/supernova/preview-unlock.png)
@@ -17,7 +20,7 @@ Cells use classic terminal proportions (twice as tall as wide) with uniform scal
 ## Install
 
 ```bash
-git clone https://github.com/zaheen4/omarchy-boot-wordmark.git ~/.local/share/omarchy-boot-wordmark
+git clone https://github.com/zaheen4/omarchy-wordmark-kit.git ~/.local/share/omarchy-wordmark-kit
 ```
 
 Dependencies (all already required by Omarchy's own `omarchy plymouth` commands, plus Pillow):
@@ -26,7 +29,7 @@ Dependencies (all already required by Omarchy's own `omarchy plymouth` commands,
 sudo pacman -S --needed imagemagick python-pillow
 ```
 
-## Usage
+## Usage — boot theme
 
 ```bash
 # WORD  BG COLOR  FG COLOR   DESTINATION
