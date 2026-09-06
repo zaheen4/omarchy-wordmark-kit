@@ -48,6 +48,21 @@ Notes:
 - Rule of thumb: ~8 characters fit the 800px canvas at the default size. Longer words still work but render smaller.
 - `examples/cosmos/` and `examples/supernova/` contain demo renders so you can see the output before installing anything.
 
+## Screensaver / About art
+
+`render-screensaver.sh` renders a word in the same font for the Omarchy
+screensaver (or About screen — same format):
+
+```bash
+./render-screensaver.sh "COSMOS" > art.txt         # print to stdout
+./render-screensaver.sh "COSMOS" --apply           # install + preview now
+```
+
+`--apply` writes `~/.config/omarchy/branding/screensaver.txt` (honors
+`XDG_CONFIG_HOME`) and force-launches the screensaver so you see it
+immediately — the same flow as the native Set-From-Image option. Revert with
+`omarchy branding screensaver reset`. Same letters-and-spaces-only limitation.
+
 ## Troubleshooting
 
 - **Word renders small.** The canvas is 800×188 and cells keep terminal proportions, so long words scale down to fit. Prefer ~8 characters; longer words still work, just smaller.
