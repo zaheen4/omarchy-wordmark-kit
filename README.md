@@ -2,7 +2,7 @@
 
 Build an Omarchy-style Plymouth boot theme from any word. Renders your word in **Delta Corps Priest 1** — the FIGlet font the Omarchy wordmark itself is drawn in — and rasterizes it to a seamless `logo.png` in your theme's colors. The result plugs into Omarchy's native **Style → Unlock** picker, no system files touched.
 
-![example](examples/omarchy/preview-unlock.png)
+![example](examples/cosmos/preview-unlock.png)
 
 ## Why not just ImageMagick text?
 
@@ -45,7 +45,7 @@ Notes:
 
 - The font draws **letters and spaces only** — digits and punctuation are skipped (and named on stderr).
 - Rule of thumb: ~8 characters fit the 800px canvas at the default size. Longer words still work but render smaller.
-- `examples/omarchy/` contains a render of `OMARCHY` so you can compare against stock `/usr/share/plymouth/themes/omarchy/logo.png`.
+- `examples/cosmos/` contains a demo render so you can see the output before installing anything.
 
 ## How it works
 
